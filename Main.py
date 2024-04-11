@@ -1,22 +1,15 @@
-print("Hello Word")
+from flask import Flask
+from Migration.migration import init_db
+from Entidades.Ong.Web import ong_routes
+from Entidades.Voluntario.Web import voluntario_routes
+from Entidades.Evento.Web import evento_routes
 
-import sqlite3
+app = Flask(__name__)
 
-conn = sqlite3.connect('BancoDeDados.db')
+app.register_blueprint(ong_routes)
+app.register_blueprint(voluntario_routes)
+app.register_blueprint(evento_routes)
 
-cursor = conn.cursor()
-
-create_table_query = '''
-CREATE TABLE IF NOT EXISTS users (
-    id INTEGER PRIMARY KEY,
-    username TEXT NOT NULL,
-    email TEXT NOT NULL,
-    password TEXT NOT NULL
-);
-'''
-
-cursor.execute(create_table_query)
-
-conn.commit()
-
-conn.close()
+if __name__ == '__main__':
+    init_db()
+    app.run(debug=True)
