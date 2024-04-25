@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo/estilos.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/so_logo.png">
+    <title>ONGs conectadas</title>
+    <script defer src="js/app.js"></script>
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu">
+            <a id="home" style="color: white; padding: 15px; font-family: Arial, Helvetica, sans-serif;" href="paginaInicial.html">Home</a>
+            <a id="calendario" style="color: white; padding: 15px; font-family: Arial, Helvetica, sans-serif;" href="calendario.html">Calend&aacute;rio de eventos</a>
+            
+    </div>
+
+        <div class="imagemlogo">
+            <img src="img/logo.png" width="100">
+
+        </div>
+
+        <div class="login">
+            <button class="login" onclick="window.location.href='login.html'">Login</button>
+        </div>
+
+    </header>
+
+    <div class="tela-login">
+        <h2>Login</h2>
+        <br>
+        <input id="emailLogin" type="email" placeholder="E-mail">
+        <br><br>
+        <input id="senhaLogin" type="password" placeholder="Senha">
+        <br><br>
+        <button class="botao-enviar" onclick="verificaSeVazio()">Enviar</button>
+        <br><br>
+        <h6>
+            <a id="cadastro" style="color: white; padding: 15px; font-family: Arial, Helvetica, sans-serif;" href="telaCadastroUsuario.html">Cadastre-se</a>
+        </h6>
+    </div>
+
+</body>
+</html>

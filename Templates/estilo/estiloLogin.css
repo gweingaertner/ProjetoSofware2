@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    flex: 1; /* Ocupa todo o espaço restante */
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+    background-color: #004AAD; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    display: flex; /* Utiliza flexbox para organizar os elementos */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.menu {
+    flex: 1; /* Ocupa todo o espaço restante */
+}
+.overlay-content {
+    
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: 25%;
+    margin-top: 30px;
+}
+.overlay {
+    height: 100%;
+    background-color: #004AAD;
+    z-index: 9;
+    position: fixed;
+    width: 0;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;    
+    transition: 0.3s;
+}
+
+footer{
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;    
+    transition: 0.3s;
+    position: absolute;
+    top: 409px;
+}
+
+.overlay .closebtn{
+    position: absolute;
+    left: 90px;
+
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;    
+    transition: 0.3s;
+}
+
+
+.logo {
+    text-align: center; /* Centraliza o texto */
+    flex: 2; /* Ocupa duas vezes o espaço restante */
+}
+
+.login {
+    text-align: right; /* Alinha o texto à direita */
+    flex: 1; /* Ocupa o espaço restante */
+    text-decoration: none;
+    color: white;
+}
+
+#login_ref{
+    font-size: 16px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav{
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-list a{
+    font-size: 18px;
+    color: white;
+    padding-block: 16px;
+}
+
+.hamburger{
+    border: none;
+    background: none;
+    border-top: 3px solid white;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after{
+    content: "  ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin-top: 5px;
+}
+.login {
+    position: static;
+    width: 100px;
+    max-width: 800px;
+  }
+  
+  .login .login {
+    position: static;
+    transform: translate(-10%, -10%);
+    -ms-transform: translate(10%, 50%);
+    background-color:#004AAD;
+    color:white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .login .login:hover {
+    background-color: #38B6FF;
+    color: white;
+  }
+  .tela-login{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    border-radius: 15px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  input{
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+  }
+  .botao-enviar{
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+  }
+  .botao-enviar:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+  }
+
+  body{
+    background-image: linear-gradient(90deg, cyan, #38B6FF);
+  }
+  h2{
+    text-align: center;
+  }
+  h6{
+    text-align: center;
+    cursor: pointer;
+  }
+  .content {
+    min-height: calc(100vh - 150px); 
+}
+
+footer {
+    background-color: #004AAD; 
+    color: #fff; 
+    padding: 10px; 
+    text-align: center; 
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+}
+
+  

@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    /* Centraliza o texto */
+    flex: 2;
+    /* Ocupa duas vezes o espaço restante */
+}
+
+.login {
+    text-align: right;
+    /* Alinha o texto à direita */
+    flex: 1;
+    /* Ocupa o espaço restante */
+    text-decoration: none;
+    color: white;
+}
+
+#login_ref {
+    font-size: 16px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login {
+    position: static;
+    width: 100px;
+    max-width: 800px;
+}
+
+.login .login {
+    position: static;
+    transform: translate(-10%, -10%);
+    -ms-transform: translate(10%, 50%);
+    background-color: #004AAD;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.login .login:hover {
+    background-color: #38B6FF;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#calendar h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.calendar-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#month-year {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    flex: 1;
+    /* Ocupa todo o espaço restante */
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.navigation button {
+    background-color: #38B6FF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.navigation button:hover {
+    background-color: #0056b3;
+}
+
+#days {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.day {
+    display: inline-block;
+    width: 130px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.day:hover {
+    background-color: #f0f0f0;
+}
+
+.day .date {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.event {
+    background-color: #007bff;
+    color: #fff;
+    padding: 2px 5px;
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+input[type="button"].add-event-button {
+    background-color: #ccc;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 8px 8px;
+    cursor: pointer;
+    display: block;
+    margin: 5px auto;
+}
+
+
+.delete-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+}
+
+.content {
+    min-height: calc(100vh - 150px);
+}
+
+footer {
+    background-color: #004AAD;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+}
+
+header {
+    background-color: #004AAD;
+    /* Cor de fundo do cabeçalho */
+    color: #fff;
+    /* Cor do texto */
+    padding: 10px;
+    /* Espaçamento interno */
+    display: flex;
+    /* Utiliza flexbox para organizar os elementos */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+}
+
+a {
+    text-decoration: none;
+}
